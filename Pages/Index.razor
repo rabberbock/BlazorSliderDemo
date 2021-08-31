@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<div>
+    Example with value
+    <Slider TValue="(double, double)" Value="_range" DefaultValue="(20, 50)" Min="20" Max="50" />
+</div>
+
+<div>
+    Example with no value
+    <Slider TValue="(double, double)" DefaultValue="(20, 50)" Min="20" Max="50" />
+</div>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    private (double, double) _range = (20, 50);
+
+}
